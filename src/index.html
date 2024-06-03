@@ -3,23 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Excuse Generator</title>
+    <link rel="shortcut icon" href="excuse.jpg" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url("https://wallpapers-clan.com/wp-content/uploads/2024/04/sunrise-gradient-background-desktop-wallpaper-preview.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+      }
+      #content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      h1 {
+        margin: 0;
+        padding: 10px;
+      }
+      p {
+        margin: 0;
+        padding: 30px;
+        font-size: 1.5em;
+      }
+    </style>
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
+    <div id="content" class="container-fluid text-center">
+      <h1 class="mt-5 bungee-spice-regular">Welcome To Excuse Generator</h1>
+      <p class="bebas-neue-regular">Your favorite excuses</p>
+      <div
+        class="bg-warning bg-gradient rounded bg-opacity-50 bebas-neue-regular"
+      >
+        <p id="excuse"></p>
+      </div>
+      <br />
+      <button id="refresh" type="button" class="btn btn-warning">
+        New excuse
+      </button>
       <div class="fixed-bottom p-4">
         Made with ❤️ by
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
